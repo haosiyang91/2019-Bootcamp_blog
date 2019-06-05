@@ -29,6 +29,7 @@ SRR7119573	https://sra-download.ncbi.nlm.nih.gov/traces/sra62/SRR/006952/SRR7119
 
 ## Go to Galaxy https://usegalaxy.org/
 Get data -> Upload data as Collection. Identify URL and List Identifier.
+Or obtain data from Shared Data -> Data Library -> Tutorial -> ColE1
 
 ## Reads processing
 
@@ -54,7 +55,7 @@ https://software.broadinstitute.org/software/igv/
 
 
 
-Useful websites:
+# Useful websites:
 Blue Collar Bioinformatics  http://bcb.io/
 Galaxy Training network  https://galaxyproject.github.io/training-material/
 Hugo 
