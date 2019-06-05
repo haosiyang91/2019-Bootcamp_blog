@@ -16,7 +16,7 @@ https://www.ncbi.nlm.nih.gov/bioproject/PRJNA459526
 Article http://msb.embopress.org/content/15/5/e8719.long#sec-10
 
 This contains 16 datasets. We downloaded RunInfo table from NCBI and removed columns to produce this:
-
+...
 SRR7119574	https://sra-download.ncbi.nlm.nih.gov/traces/sra62/SRR/006952/SRR7119574	lacZ_ind_RPF_r2
 SRR7119575	https://sra-download.ncbi.nlm.nih.gov/traces/sra62/SRR/006952/SRR7119575	lacZ_ind_mRNA_r2
 SRR7119576	https://sra-download.ncbi.nlm.nih.gov/traces/sra62/SRR/006952/SRR7119576	lacZ_unind_RPF_r2
@@ -25,11 +25,31 @@ SRR7119562	https://sra-download.ncbi.nlm.nih.gov/traces/sra62/SRR/006952/SRR7119
 SRR7119563	https://sra-download.ncbi.nlm.nih.gov/traces/sra62/SRR/006952/SRR7119563	lacZ_ind_mRNA_r1
 SRR7119572	https://sra-download.ncbi.nlm.nih.gov/traces/sra62/SRR/006952/SRR7119572	lacZ_unind_RPF_r1
 SRR7119573	https://sra-download.ncbi.nlm.nih.gov/traces/sra62/SRR/006952/SRR7119573	lacZ_unind_mRNA_r1
+...
 
 ## Go to Galaxy https://usegalaxy.org/
 Get data -> Upload data as Collection. Identify URL and List Identifier.
 
+## Reads processing
 
+The reads contain the following adapters:
+...
+-a XXXXXXXXXXXXXX
+-b XXXXXXXXXXXXXXXX
+-g XXXXXXXXXXXXXX
+...
+
+## Remove adapters from original reads
+...
+https://cutadapt.readthedocs.io/en/stable/
+...
+
+## Mapping through Galaxy
+"Build Dataset list" that contains all the datasets.
+As for mapping, use Bowtie2 method to map datasets to a reference gemone, which in this study is the K12-pBR322 bacteria genome. 
+
+## Download IGV software for visualization of the mapping results
+https://software.broadinstitute.org/software/igv/
 
 
 
